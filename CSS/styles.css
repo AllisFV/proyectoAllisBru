@@ -1,0 +1,1137 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed',
+        sans-serif;
+    font-family: 'DM Sans',
+        sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.07fr 0.6fr 1fr 0.6fr 0.5fr 0.7fr 0.3fr;
+    grid-template-areas:
+        "nav"
+        "header"
+        "nosotros"
+        "oportunidades"
+        "noticias"
+        "contacto"
+        "footer";
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+#ingresar{
+    background-color: #5227cc;
+    color: #ffff;
+    border-radius: 15px;
+    padding: 4px 7px;
+    width: auto;
+    text-align: center;
+    width: 8rem;
+}
+
+#logo {
+    width: 30%;
+    height: 50%;
+    margin-top: 13px;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    color: white;
+    grid-area: header;
+    background-image: url(../img/manos.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado {
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+#encabezado {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.textosGenericos {
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+#nosotros {
+    padding: 100px;
+    color: #ffff;
+    grid-area: nosotros;
+    height: auto;
+    width: 100%;
+    background-color: #5298ff;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "imgDos solEmp"
+        "solOrg imgTres";
+}
+
+#solucionesEmp {
+    grid-area: solEmp;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#solucionesOrg {
+    grid-area: solOrg;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+#imgDos {
+    grid-area: imgDos;
+    background-image: url("../img/oficina.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#imgTres {
+    grid-area: imgTres;
+    background-image: url("../img/voluntariado.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#oportunidades {
+    width: 100%;
+    grid-area: oportunidades;
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: "texto"
+        "cajas";
+}
+
+
+#textos {
+    margin-left: 25%;
+    grid-area: texto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cajas {
+    color: #ffff;
+    grid-area: cajas;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+
+.cajasDeColores {
+    padding: 20px;
+    height: 8rem;
+    width: 10rem;
+    background-color: #5227cc;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "iconos mas"
+        "textoCajas textoCajas";
+
+}
+
+.textoCajas {
+    grid-area: textoCajas;
+}
+
+.iconoMas {
+    background-image: url("../img/icono-mas.png");
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.masDerecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#iconoVoluntario {
+    background-image: url("../img/icono-mano.png");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cajaVoluntario {
+    background-color: #ff4a4a;
+    margin: 0 20px;
+}
+
+#iconoCorazon {
+    background-image: url("../img/icono-mano-corazon.png");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cajaDonar {
+    background-color: #fd841f;
+    margin: 0 20px;
+}
+
+#iconoReciclar {
+    background-image: url("../img/icono-reciclar.png");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cajaReciclar {
+    background-color: #54b435;
+    margin: 0 20px;
+}
+
+#iconoMaletin {
+    background-image: url("../img/icono-maletin.png");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#cajaLlamados {
+    background-color: #5cb8e4;
+    margin: 0 20px;
+}
+
+#noticias {
+    padding: 100px;
+    height: auto;
+    grid-area: noticias;
+    background-color: #5298ff;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 0.1fr 3fr;
+    grid-template-areas: "h2 h2 h2 h2"
+                        "verTodas verTodas verTodas verTodas"
+                        "noticiaUno noticiaDos noticiaTres noticiaCuatro" ;
+}
+
+h2 {
+    grid-area: h2;
+    text-align: center;
+}
+
+#verTodas {
+    font-size: 0.9rem;
+    color: #ffff;
+    text-decoration: underline;
+    grid-area: verTodas;
+    text-align: center;
+}
+
+
+#noticiaUno {
+    grid-area: noticiaUno;
+}
+
+#noticiaDos {
+    grid-area: noticiaDos;
+}
+
+#noticiaTres {
+    grid-area: noticiaTres;
+}
+
+#noticiaCuatro {
+    grid-area: noticiaCuatro;
+}
+
+#fotoNoticia1 {
+    background-image: url("../img/voluntarios_animales.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+#fotoNoticia2 {
+    background-image: url("../img/Thumbnail-1024x538.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+#fotoNoticia3 {
+    background-image: url("../img/SOS-38.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+#fotoNoticia4 {
+    background-image: url("../img/Un-techo-para-mi-pais_lr21-e.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+.cajaNoticias {
+    width: 20rem;
+    height: 30rem;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #ffff;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 1fr 2.5fr 1fr;
+    grid-template-areas: "imagen imagen"
+        "cajita cajita"
+        "cajita cajita"
+        "cajita cajita";
+}
+
+.cajita {
+    grid-area: cajita;
+    height: 100%;
+    padding: 20px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.5rem 1fr 0.1fr;
+    grid-template-areas: "fechaYHora fechaYHora"
+        "texto texto"
+        "verMas verMas";
+}
+
+.fechaYHora {
+    width: 100%;
+    grid-area: fechaYHora;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fecha {
+    height: 40px;
+    display: flex;
+    align-self: flex-start;
+    font-size: 0.8rem;
+}
+
+.hora {
+    display: flex;
+    align-self: flex-start;
+    font-size: 0.8rem;
+}
+
+
+.infoVioleta {
+    margin-top: 10px;
+    background-color: #5227cc;
+    color: #ffff;
+    border-radius: 15px;
+    padding: 4px 7px;
+    width: auto;
+    text-align: center;
+}
+
+.iconoFecha {
+    background-image: url("../img/icono-calendario.png");
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    margin-right: 5px;
+
+}
+
+.iconoHora {
+    background-image: url("../img/icono-reloj.png");
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.textosNoticias {
+    grid-area: texto;
+}
+
+.fotosNoticias {
+    grid-area: imagen;
+}
+
+.verMas {
+    grid-area: verMas;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.8rem;
+    align-self: flex-end;
+}
+
+.IconoVerMas {
+    background-image: url("../img/icono-flecha.png");
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+
+}
+
+
+.titulosNoticias {
+    margin-bottom: 20px;
+}
+
+.imagenesIconosCajas {
+    width: 45px;
+    height: 45px;
+    grid-area: iconos;
+}
+
+
+contactoTitulo {
+    margin-top: 10px;
+}
+
+.nombre {
+    margin-top: 5px;
+}
+
+.mail {
+    margin-top: 5px;
+}
+
+.msj {
+    margin-top: 5px;
+}
+
+#boton {
+    margin-top: 10px;
+    background-color: #5227cc;
+    color: #ffff;
+    border-radius: 15px;
+    padding: 3px;
+    width: 80px;
+    text-align: center;
+}
+
+#contacto {
+    height: 100%;
+    padding: 100px;
+    grid-area: contacto;
+    background-color: aliceblue;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagenContacto formulario";
+}
+
+#imagenContacto{
+    background-image: url("../img/laptop-escritorio.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: imagenContacto;
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: formulario;
+}
+
+
+
+footer {
+    border-top: solid #5227cc 5px;
+    text-align: center;
+    padding: 20px 100px;
+    background-color: #7749F8;
+    color: #ffff;
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "nexosFooter contenedorFooter contenedorFooter socialMedia"
+        "nexosFooter contenedorFooter contenedorFooter socialMedia"
+        "nexosFooter contenedorFooter contenedorFooter socialMedia"
+        "nexosFooter contenedorFooter contenedorFooter socialMedia"
+        "copyright copyright copyright copyright";
+}
+
+#copyright {
+    grid-area: copyright;
+    color: #5227cc;
+}
+
+#contenedorFooter {
+    grid-area: contenedorFooter;
+
+}
+
+#socialMediaFooter {
+    display: flex;
+    flex-direction: column;
+
+    grid-area: socialMedia;
+}
+
+#logosFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding: 0 60px;
+}
+
+
+#seguinos {
+    grid-area: seguinos;
+}
+
+#facebook {
+
+    background-image: url("../img/facebook-app-symbol.png");
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    background-repeat: no-repeat;
+
+}
+
+#twitter {
+
+    background-image: url("../img/twitter.png");
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    background-repeat: no-repeat;
+
+}
+
+#instagram {
+
+    background-image: url("../img/instagram.png");
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    background-repeat: no-repeat;
+
+}
+
+#nexosFooter {
+    background-image: url("../img/logo-blanco.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: nexosFooter;
+    width: 100%;
+    height: 35px;
+}
+
+#NosotrosFooter {
+    grid-area: NosotrosFooter;
+}
+
+#TerminosYCondiciones {
+    grid-area: TerminosYCondiciones;
+}
+
+#ContactoFooter {
+    grid-area: ContactoFooter;
+}
+
+#NoticiasFooter {
+    grid-area: NoticiasFooter;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    align-items: center;
+    font-weight: bold;
+}
+li {
+    list-style-type: none;
+}
+
+input{ 
+    border-radius: 10px;
+    padding: 0 5px;
+}
+textarea{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:390px) {
+
+    #contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.6fr 1.5fr 1.3fr 2.7fr 0.7fr 0.3fr;
+        grid-template-areas:
+            "nav"
+            "header"
+            "nosotros"
+            "oportunidades"
+            "noticias"
+            "contacto"
+            "footer";
+    }
+
+    nav {
+        width: 100%;
+        height: 5rem;
+    }
+
+    #logo {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #encabezado {
+        width: 100%;
+    }
+
+    .textosGenericos {
+        margin-top: 15px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    #nosotros {
+        padding: 0;
+        color: #ffff;
+        grid-area: nosotros;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 2fr 0.7fr 2fr;
+        grid-template-areas:
+            "imgDos"
+            "solEmp"
+            "imgTres"
+            "solOrg";
+    }
+
+    #imgDos {
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+    }
+
+    #solucionesEmp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #imgTres {
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+    }
+
+    #solucionesOrg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    #oportunidades {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #textos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .cajasDeColores {
+        padding: 20px;
+        height: 8rem;
+        width: 11.5rem;
+        background-color: #5227cc;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: "iconos mas"
+            "textoCajas textoCajas";
+
+    }
+
+    .textoCajas {
+        grid-area: textoCajas;
+    }
+
+    .iconoMas {
+        background-image: url("../img/icono-mas.png");
+        background-repeat: no-repeat;
+        height: 15px;
+        width: 15px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .masDerecha {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #iconoVoluntario {
+        background-image: url("../img/icono-mano.png");
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #cajaVoluntario {
+        background-color: #ff4a4a;
+        margin-bottom: 20px;
+    }
+
+    #iconoCorazon {
+        background-image: url("../img/icono-mano-corazon.png");
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #cajaDonar {
+        background-color: #fd841f;
+        margin-bottom: 20px;
+    }
+
+    #iconoReciclar {
+        background-image: url("../img/icono-reciclar.png");
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #cajaReciclar {
+        background-color: #54b435;
+        margin-bottom: 20px;
+    }
+
+    #iconoMaletin {
+        background-image: url("../img/icono-maletin.png");
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #cajaLlamados {
+        background-color: #5cb8e4;
+        margin-bottom: 20px;
+    }
+
+
+    #cajas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    #contacto {
+        height: 100%;
+        padding: 20px 0 20px 0;
+        grid-area: contacto;
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    footer {
+        border-top: solid #5227cc 5px;
+        text-align: center;
+        padding: 20px;
+        background-color: #7749F8;
+        color: #ffff;
+        width: 100%;
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "nexosFooter contenedorFooter socialMedia"
+            "nexosFooter contenedorFooter socialMedia"
+            "nexosFooter contenedorFooter socialMedia"
+            "nexosFooter contenedorFooter socialMedia"
+            "copyright copyright copyright";
+    }
+
+    #copyright {
+        grid-area: copyright;
+        color: #5227cc;
+    }
+
+    #contenedorFooter {
+        grid-area: contenedorFooter;
+
+    }
+
+    #socialMediaFooter {
+        display: flex;
+        flex-direction: column;
+
+        grid-area: socialMedia;
+    }
+
+    #logosFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 5px;
+    }
+
+
+    #seguinos {
+        grid-area: seguinos;
+    }
+
+    #facebook {
+
+        background-image: url("../img/facebook-app-symbol.png");
+        background-size: cover;
+        height: 15px;
+        width: 15px;
+        background-repeat: no-repeat;
+
+    }
+
+    #twitter {
+
+        background-image: url("../img/twitter.png");
+        background-size: cover;
+        height: 15px;
+        width: 15px;
+        background-repeat: no-repeat;
+
+    }
+
+    #instagram {
+
+        background-image: url("../img/instagram.png");
+        background-size: cover;
+        height: 15px;
+        width: 15px;
+        background-repeat: no-repeat;
+
+    }
+
+    #nexosFooter {
+        background-image: url("../img/logo-blanco.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        grid-area: nexosFooter;
+    }
+
+    #NosotrosFooter {
+        grid-area: NosotrosFooter;
+    }
+
+    #TerminosYCondiciones {
+        grid-area: TerminosYCondiciones;
+    }
+
+    #ContactoFooter {
+        grid-area: ContactoFooter;
+    }
+
+    #NoticiasFooter {
+        grid-area: NoticiasFooter;
+    }
+
+
+
+    a {
+        text-decoration: none;
+        color: #ffff;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+
+
+    contactoTitulo {
+        margin-top: 10px;
+    }
+
+    .nombre {
+        margin-top: 5px;
+    }
+
+    .mail {
+        margin-top: 5px;
+    }
+
+    .msj {
+        margin-top: 5px;
+    }
+
+    #boton {
+        margin-top: 10px;
+        background-color: #5227cc;
+        color: #ffff;
+        border-radius: 15px;
+        padding: 3px;
+        width: 80px;
+        text-align: center;
+    }
+
+
+
+    #fotoNoticia1 {
+        background-image: url("../img/voluntarios_animales.jpg");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        border-radius: 10px;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+
+    #fotoNoticia2 {
+        background-image: url("../img/Thumbnail-1024x538.png");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        border-radius: 10px;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+
+    #fotoNoticia3 {
+        background-image: url("../img/SOS-38.jpg");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        border-radius: 10px;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+
+    #fotoNoticia4 {
+        background-image: url("../img/Un-techo-para-mi-pais_lr21-e.jpg");
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        border-radius: 10px;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+
+    .cajaNoticias {
+        padding-bottom: 10px;
+        margin-top: 10px;
+        height: 28rem;
+        width: 18rem;
+        background-color: #ffff;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 1fr 2.5fr 1fr;
+        grid-template-areas: "imagen imagen"
+            "cajita cajita"
+            "cajita cajita"
+            "cajita cajita";
+    }
+
+    .cajita {
+        grid-area: cajita;
+        height: 100%;
+        padding: 20px 20px 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2.5rem repeat(2, 1fr);
+        grid-template-areas: "fechaYHora fechaYHora"
+            "texto texto"
+            "verMas verMas";
+    }
+
+    #noticias {
+        height: auto;
+        grid-area: noticias;
+        background-color: #5298ff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul{
+        display: none;
+    }
+
+    #imagenContacto{
+        display: none;
+    }
+
+}
